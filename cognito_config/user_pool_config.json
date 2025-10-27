@@ -1,0 +1,9 @@
+{
+  "UserPoolName": "stock-trend-users",
+  "Policies": {
+    "PasswordPolicy": {
+      "MinimumLength": 8
+    }
+  },
+  "UsernameAttributes": ["email"]
+}
