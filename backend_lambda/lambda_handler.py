@@ -5,9 +5,9 @@ import joblib
 import io
 from utils import classify_trend
 
-MODEL_BUCKET = "your-s3-bucket"
-MODEL_KEY = "model.joblib"
-SCALER_KEY = "scaler.joblib"
+MODEL_BUCKET = "stock-trend-models"
+MODEL_KEY = "models/model.joblib"
+SCALER_KEY = "models/scaler.joblib"
 
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
